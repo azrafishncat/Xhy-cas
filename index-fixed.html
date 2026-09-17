@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xhy ♡ Cas</title>
+  <meta name="description" content="A tiny corner of the internet for Xhy and Cas.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-noise"></div>
+
+  <header class="topbar">
+    <div class="tiny">♡ xhy & cas / personal archive</div>
+    <div class="tiny">est. 25.03.2026</div>
+  </header>
+
+  <main class="site">
+    <section class="hero">
+      <div class="scribble">♡</div>
+      <p class="label">a tiny place on the internet</p>
+      <h1>Xhy <span>♡</span> Cas</h1>
+      <p class="subtitle">made for you, by me.</p>
+
+      <div class="hero-art">
+        <img src="us-01.jpeg" alt="Illustration representing Xhy and Cas">
+        <span class="tape tape-a"></span>
+        <span class="tape tape-b"></span>
+      </div>
+
+      <p class="date">25 . 03 . 2026 — and counting</p>
+    </section>
+
+    <nav class="nav" aria-label="Main navigation">
+      <button class="active" data-page="home">home</button>
+      <button data-page="memories">memories</button>
+      <button data-page="letters">letters</button>
+      <button data-page="questions">questions</button>
+      <button data-page="songs">songs</button>
+      <button data-page="games">games</button>
+    </nav>
+
+    <section class="page" id="home">
+      <div class="note">
+        <p class="label">01 / little lock</p>
+        <h2>before you wander in...</h2>
+        <p>there's one tiny question first.</p>
+        <div class="lock-row">
+          <input id="password" inputmode="numeric" placeholder="dd.mm.yyyy" maxlength="10">
+          <button id="unlock">unlock ♡</button>
+        </div>
+        <p id="unlock-message" class="feedback" aria-live="polite"></p>
+      </div>
+
+      <div class="intro-grid">
+        <button class="menu-card" data-jump="memories">
+          <span>📎</span><b>our little archive</b><small>pictures, moments, things i kept</small>
+        </button>
+        <button class="menu-card" data-jump="letters">
+          <span>✉</span><b>letters for you</b><small>open one whenever you need it</small>
+        </button>
+        <button class="menu-card" data-jump="questions">
+          <span>?</span><b>questions</b><small>let's see how well you know me</small>
+        </button>
+        <button class="menu-card" data-jump="games">
+          <span>▦</span><b>tiny arcade</b><small>important boyfriend examinations</small>
+        </button>
+      </div>
+
+      <div class="quote">
+        <span>“</span>
+        some pictures are real, some are just how i see us.
+        <span>”</span>
+      </div>
+    </section>
+
+    <section class="page hidden" id="memories">
+      <div class="section-head">
+        <p class="label">02 / archive</p>
+        <h2>little pieces of us</h2>
+        <p>the gallery is yours to edit — just replace the files inside <code>photos/</code>.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="photo tall"><img src="us-02.jpeg" alt="Couple illustration"><figcaption>us, somewhere between a memory and a daydream.</figcaption></figure>
+        <figure class="photo"><img src="us-03.jpeg" alt="Couple illustration"><figcaption>♡</figcaption></figure>
+        <figure class="photo"><img src="us-04.jpeg" alt="Couple illustration"><figcaption>still us.</figcaption></figure>
+        <figure class="photo wide"><img src="us-05.jpeg" alt="Couple illustration"><figcaption>i like this version of us.</figcaption></figure>
+        <figure class="photo"><img src="us-06.jpeg" alt="Couple illustration"><figcaption>our soundtrack in picture form.</figcaption></figure>
+        <figure class="photo"><img src="us-07.jpeg" alt="Couple illustration"><figcaption>little silly things.</figcaption></figure>
+        <figure class="photo"><img src="us-08.jpeg" alt="Couple illustration"><figcaption>♡ ♡ ♡</figcaption></figure>
+        <figure class="photo"><img src="us-09.jpeg" alt="Cute plushies representing the couple"><figcaption>our tiny stand-ins.</figcaption></figure>
+        <figure class="photo wide"><img src="us-10.jpeg" alt="Couple illustration"><figcaption>to be continued...</figcaption></figure>
+      </div>
+
+      <div class="timeline">
+        <div><strong>25.03.2026</strong><span>the day it became us.</span></div>
+        <div><strong>after that</strong><span>more memories go here.</span></div>
+        <div><strong>future entry</strong><span>we haven't written this one yet.</span></div>
+      </div>
+    </section>
+
+    <section class="page hidden" id="letters">
+      <div class="section-head">
+        <p class="label">03 / letters</p>
+        <h2>for you, always.</h2>
+      </div>
+      <div class="letter-grid">
+        <button class="letter-card" data-letter="miss">✉<b>when you miss me</b><small>open this one</small></button>
+        <button class="letter-card" data-letter="bad">✉<b>on a bad day</b><small>you deserve some softness</small></button>
+        <button class="letter-card" data-letter="love">✉<b>when you need reminding</b><small>just in case</small></button>
+        <button class="letter-card" data-letter="random">✉<b>for absolutely no reason</b><small>my favorite kind</small></button>
+      </div>
+      <article id="letter" class="letter hidden" aria-live="polite"></article>
+    </section>
+
+    <section class="page hidden" id="questions">
+      <div class="question-box">
+        <p class="label">04 / couple questions</p>
+        <div class="question-number" id="question-number">q01</div>
+        <h2 id="question">What's a tiny thing about us that you never want to forget?</h2>
+        <textarea placeholder="your answer..."></textarea>
+        <button id="next-question">save & next →</button>
+      </div>
+    </section>
+
+    <section class="page hidden" id="songs">
+      <div class="section-head">
+        <p class="label">05 / soundtrack</p>
+        <h2>songs that feel like us</h2>
+        <p>your playlist lives here.</p>
+      </div>
+      <div class="spotify">
+        <iframe
+          src="https://open.spotify.com/embed/playlist/7rpKWzSPKPgqcJmUnzRSVn"
+          width="100%" height="380" frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy" title="Xhy and Cas Spotify playlist"></iframe>
+      </div>
+      <p class="tiny center">playlist: 宝贝</p>
+    </section>
+
+    <section class="page hidden" id="games">
+      <div class="section-head">
+        <p class="label">06 / arcade</p>
+        <h2>tiny boyfriend examinations</h2>
+        <p>failure is embarrassing. success earns one imaginary kiss.</p>
+      </div>
+
+      <div class="game-tabs">
+        <button class="active" data-game="wordle">wordle</button>
+        <button data-game="quiz">quiz</button>
+      </div>
+
+      <div class="game" id="wordle">
+        <p class="game-help">guess the five-letter word.</p>
+        <div id="board" class="board"></div>
+        <p id="wordle-message" class="feedback" aria-live="polite">your turn ♡</p>
+        <div id="keyboard" class="keyboard"></div>
+      </div>
+
+      <div class="game hidden" id="quiz">
+        <p class="label">boyfriend knowledge test</p>
+        <h3 id="quiz-question">What's one thing Cas would probably choose?</h3>
+        <div id="quiz-options" class="options"></div>
+        <p id="quiz-message" class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>made with ♡ for Xhy</span>
+    <span>25.03.2026 → ∞</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
